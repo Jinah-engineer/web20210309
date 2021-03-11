@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 직전 형제가 h1 인 p element */
+        h1 + p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1+p>lorem5 -->
+    <h1></h1>
+    <!-- 얘가 바로 직전 형제가 p -->
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- p*3>lorem5 -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Harum eaque exercitationem recusandae esse?</p>
+    <p>Porro ipsam harum quos quasi.</p>
+
+    <!-- div>h1+p -->
+    <div>
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <!-- h1+p -->
+    <h1></h1>
+    <p></p>
+
+
+</body>
+</html>
+
+<!-- general sibling --> 형제 중에서 직전에 00 요소가 있었던 element -->
