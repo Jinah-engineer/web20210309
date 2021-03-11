@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- html>head>link+style^body -->
+<html>
+<head>
+    <!-- 경우에 따라서 style을 internal 그리고 external 하게 만들 수 있다 -->
+    <link rel="stylesheet" href="03-mystyle1.css">
+    <style>
+        /* 
+        현재 external 그리고 internal의 방식에서 font-size가 충돌한다.
+        이 상황에서 아래 h1 style 태그와 external stylesheet가 우선 순위가 같게 되는데,
+        이때 더 아래에 있는 h1 style 태그에 우선 순위가 적용되어
+        폰트가 100px 이 된다. 
+         */
+        h1 {
+            text-decoration: underline;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.error>lorem3 -->
+    <h1 style="font-size: 5px;" class="error">Lorem, ipsum dolor.</h1>
+</body>
+</html>
+
+<!-- 
+    inline > internal > external 의 순위로 우선 순위가 적용된다
