@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            background-color: blue;
+            /* text-decoration: underline; */
+        }
+        h2 {
+            color: yellow;
+            /* text-decoration: underline; */
+        }
+        /* 여러 개의 선택자에 규칙을 주고 싶다면 콤마로 구분하기 */
+        /* 이게 바로 그룹 셀렉터 */
+        h1, h2, p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*2>lorem3^p*2>lorem^h2*2>lorem3 -->]
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1>Quaerat, totam quibusdam.</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Autem odio quibusdam ad nulla.</p>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h2>Lorem, ipsum dolor.</h2>
+</body>
+</html>

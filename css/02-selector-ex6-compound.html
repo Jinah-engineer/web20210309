@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .note {
+            color:blue;
+        }
+        /* h1이면서 클래스가 note인 요소에 규칙을 주고 싶다면 */
+        h1.note {
+            text-decoration: underline;
+        }
+        /* AND의 개념! P이면서 NOTE클래스인 요소 */
+        p.note {
+            background-color: yellow;
+        }
+        /* OR의 개념! P이거나 NOTE클래스 이거나! */
+        p,.note {
+            font-size: 70px;
+        }
+        h1.note.error {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*3>lorem3^p*3>lorem5 -->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Iusto, quis architecto!</h1>
+    <!-- h1.note.error -->
+    <h1 class="note error">Lorem, ipsum.</h1>
+    <h1>Eos, ratione enim.</h1>
+    <p class="note">Lorem ipsum dolor sit amet.</p>
+    <p>Ratione itaque similique esse fugiat?</p>
+    <p>Repellat dolore esse ullam error?</p>
+    <!-- p.note>lorem -->
+    <p class="note">Lorem ipsum dolor sit.</p>
+    <!-- .note -->
+    <div class="note"></div>
+
+    <!-- p#para1>lorem3 -->
+    <p id="para1">Lorem, ipsum dolor.</p>
+
+    <!-- h1#head1.note.error -->
+    <h1 id="head1" class="note error"></h1>
+</body>
+</html>
