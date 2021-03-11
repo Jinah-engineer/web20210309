@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            position: relative;
+        }
+        h1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: black;
+            color: white;
+        }
+        /* element 자체가 투명해진다 */
+        #div1 > h1 {
+            opacity: 0.5;
+        }
+        /* 백그라운드가 투명해진다 */
+        #div2 > h1 {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+        <!-- #div1>img+h1 -->
+        <div id="div1">
+            <img src="../html/maltese-price-9.jpg" alt="">
+            <h1>Lorem, ipsum.</h1>
+        </div>
+
+        <div id="div2">
+            <img src="../html/maltese-price-9.jpg" alt="">
+            <h1>Lorem, ipsum.</h1>
+        </div>
+
+    <!-- (..)으로 한 칸 더 경로를 이동하라는 의미를 표시한다 -->
+    <img src="../html/maltese-price-9.jpg" alt="">
+
+</body>
+</html>
