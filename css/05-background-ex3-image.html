@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 여기서 div의 크기를 정해주지 않으면 이미지가 뜨지 않기 때문에 
+        반드시 크기를 정해준다 */
+        div {
+            width: 100px;
+            height: 100px;
+        }
+        #div1 {
+            /* 배경 이미지를 넣는 소스 */
+            background-image: url("../html/maltese-price-9.jpg")
+        }
+        #div2 {
+            background-image: url("../html/maltese-price-9.jpg");
+            background-repeat: no-repeat;
+        }
+        #div3 {
+            background-image: url("../html/maltese-price-9.jpg");
+            background-size: contain;
+        }
+        #div4 {
+            background-image: url("../html/maltese-price-9.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+
+    <hr>
+
+    <div id="div2"></div>
+
+    <hr>
+    <div id="div3"></div>
+
+    <hr>
+    <div id="div4"></div>
+</body> 
+</html>
+
+<!-- background property로는 color, image, repeat, position을 한번에 쓸 수 있다. -->
