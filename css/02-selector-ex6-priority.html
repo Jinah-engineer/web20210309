@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 
+        id: 100점
+        class: 10점
+        elem: 1점
+         */
+         /* 아래와 같은 경우 클래스가 요소보다 우선이기 때문에 yellow로 색깔이 바뀜 */
+        h1 {
+            color:red;
+        }
+        /* 클래스를 2번 사용하면 20점 */
+        .note.special {
+            color:pink;
+        }
+        /* 클래스 2개가 서로 충돌하는 경우, 밑에 있는 클래스에 우선수위가 적용된다 */
+        .special {
+            color:blue;
+        }
+        .note {
+            color:yellow;
+        }
+        #header1 {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*5>lorem3 -->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note special">Eveniet, velit culpa.</h1>
+    <h1 id="header1" class="note special">Distinctio, libero expedita.</h1>
+    <h1>Et, neque necessitatibus!</h1>
+    <h1>Officiis, voluptas accusantium!</h1>
+</body>
+</html>
