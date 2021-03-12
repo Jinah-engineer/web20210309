@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* 
+        inline을 가운데 정렬하려면 부모 요소에 align style을 준다
+        block을 가운데 정렬하려면 해당 block에 적절한 margin값을 준다
+         */
+        #div1 {
+            border: 2px solid black;
+            text-align: center;
+        }
+        #div2 > div {
+            width: 200px;
+            height: 100px;
+            border: 2px dotted green;
+            margin: auto;
+        }
+        #div2 {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div#div1>span>lorem4 -->
+    <!-- 
+        여기서 span은 inline element
+     -->
+    <div id="div1"><span>Lorem ipsum dolor sit.</span></div>
+
+    <!-- #div2>div -->
+    <div id="div2">
+        <div></div>
+    </div>
+</body>
+
+</html>
