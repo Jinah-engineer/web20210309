@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            border: 5px solid green;
+        }
+        #para1 {
+            border-radius: 10px;
+        }
+        /* 값이 커질수록 더 둥글게 표현된다 */
+        #para2 {
+            border-radius: 50px;
+        }
+        #para3 {
+            border-radius: 50px 30px 10px 0px;
+            /* left-top right-top right-bottom left-bottom */
+        }
+        #para4 {
+            border-top-left-radius: 50px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- p#para$*5>lorem4 -->
+    <p id="para1">Lorem ipsum dolor sit.</p>
+    <p id="para2">Odit in consectetur rerum!</p>
+    <p id="para3">Velit vero distinctio impedit.</p>
+    <p id="para4">Iusto dolor quasi mollitia!</p>
+    <p id="para5">Ea quia sequi alias.</p>
+</body>
+</html>
