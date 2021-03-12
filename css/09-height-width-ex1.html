@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            border: 2px solid black;
+        }
+        #div1 {
+            width: 300px;
+            height: 200px;
+        }
+        #div2 {
+            height: 200px;
+            width: 50%;   /* 부모 영역의 너비를 기준으로 결정. 이렇게 되면 창크기에 따라 반응형으로 항상 50% 사이즈가 구현된다. */
+        }
+        #div3 {
+            /* content사이즈는 div1과 같으나, 보더가 outside로 설정되어 시각적으로 다르게 보이는 효과가 나타난다. */
+            border: 50px solid green;
+            width: 300px;
+            height: 200px;
+        }
+        #div4 {
+            /* 위의 div3과 다르게 border를 inside로 줄 수 있다. 
+            따라서 div1의 content 사이즈와 같아보이는 효과를 준다. 
+            하지만 border가 inside 설정이 되었기 때문에
+            기존에 설정한 content 사이즈와 실제 적용된 content 사이즈가 다르다는 것을 유의해야 한다.
+            . */
+            box-sizing: border-box; 
+            border: 50px solid blue;
+            width: 300px;
+            height: 200px;
+        }
+        #div5 {
+            border-width: 0px;
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- (#div$+hr)*5 -->
+    <div id="div1"></div>
+    <hr>
+    <div id="div2"></div>
+    <hr>
+    <div id="div3"></div>
+    <hr>
+    <div id="div4"></div>
+    <hr>
+    <div id="div5"></div>
+    <hr>
+</body>
+
+</html>
