@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body, html {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        /* 부모 기준에 따라 비율이 결정된다 */
+        #percent {
+            font-size: 100%;
+        }
+
+        /* 1em = 100% */
+        .em {
+            font-size: 0.75em;
+        }
+        .rem {
+            font-size: 0.75rem; /* root element 기준. 현재 root는 html이기 때문에 html 기준으로 30px의 0.75%가 되는 것이다*/
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p id="percent">Lorem ipsum dolor sit.</p>
+    <p class="em">Lorem ipsum dolor sit.</p>
+    <!-- .em>p.em>lorem4 -->
+    <div class="em"> <!--div는 body 기준으로 0.75em-->
+        <p class="em">Lorem ipsum dolor sit.</p> <!--p는 div 기준으로 0.75em-->
+    </div>
+
+    <!-- .rem>p.rem>lorem4 -->
+    <div class="rem"> <!-- r=root -->
+        <p class="rem">Lorem ipsum dolor sit.</p>
+    </div>
+</body>
+
+</html>
