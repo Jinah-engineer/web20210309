@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* static은 고정된 상태: 위치를 이동시킬 수 없다! 명시함에도 불구하고 */
+        .static-elem {
+            width: 300px;
+            height: 200px;
+            border: 5px solid green;
+            position: static;
+            /* 
+            위치 이동하는 property는 
+            left, right, top, bottom
+             */
+            left: 200px; /* 왼쪽에서 멀어지는 정도 */
+            top: 200px; /* 위에서 멀어지는 정도 */
+        }
+        /* 기존에 배치되어야 하는 곳은 static의 위치. 여기서 배치를 설정하면 그 만큼 이동하여 움직이게 된다. */
+        .relative-elem {
+            width: 300px;
+            height: 200px;
+            border: 5px solid green;
+            position: relative;
+            /* 
+            위치 이동하는 property는 
+            left, right, top, bottom
+             */
+            left: 200px; /* 왼쪽에서 멀어지는 정도 */
+            top: 200px; /* 위에서 멀어지는 정도 */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- .static-elem -->
+    <div class="static-elem"></div>
+
+    <hr>
+
+    <!-- .relative-elem -->
+    <div class="relative-elem"></div>
+    <!-- div 아래에 있는 p element는 div의 영향을 받지 않는다. -->
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>
