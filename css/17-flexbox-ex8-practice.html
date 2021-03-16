@@ -4,6 +4,14 @@
 <head>
     <script src="all.min.js"></script>
     <style>
+        /* 제목 */
+        .title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px;
+            background-color: wheat;
+        }
         /* 내비게이션 바 */
         .wrapper {
             display: flex;
@@ -25,7 +33,7 @@
             background-color: green;
         }
 
-        /* 왼쪽 사이드 바 */
+        /* 본문 - 왼쪽 카테고리 */
         .body-container {
             display: flex;
             border: 2px solid rgb(189, 186, 186);
@@ -35,19 +43,19 @@
         .side-menu {
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
+            flex: 1;
             background-color: ivory;
-            padding: 10px;
+            padding: 20px 20px;
         }
 
         .main:hover {
             background-color: gray;
         }
 
-        /* 본문 */
-        .htmlclass {
+        /* 본문 - 가운데 내용 */
+        .main-content {
             display: flex;
-            flex-grow: 5;
+            flex: 3;
             flex-direction: column;
             padding: none;
             background-color: white;
@@ -59,12 +67,15 @@
         .content1 {
             display: flex;
             flex-grow: 1;
+            flex-direction: column;
             width: 100%;
             height: 100%;
+            padding: none;
             background-color: white;
             border: 2px solid rgb(189, 186, 186);
             justify-content: center;
             align-items: center;
+            text-align: center;
             font: 30px bold;
         }
         .content3 {
@@ -79,10 +90,10 @@
             font: 30px bold;
         }
 
-        /* 오른쪽 사이드 바 */
+        /* 본문 - 광고 오른쪽 사이드 바 */
         .content2 {
             display: flex;
-            flex-grow: 1;
+            flex: 1;
             background-color: white;
             border: 2px solid rgb(189, 186, 186);
             justify-content: center;
@@ -159,8 +170,11 @@
             <div class="main">Learn Raspberry Pi</div>
         </div>
         <!-- 본문 -->
-        <div class="htmlclass">
-            <div class="content1">HTML</div>
+        <div class="main-content">
+            <div class="content1">
+                <p>HTML</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat temporibus veniam sed vel, voluptate neque? Eligendi fuga ex reiciendis. Nobis omnis optio beatae soluta? Dignissimos ratione quos explicabo optio id.</p>
+            </div>
             <div class="content3">blahblah</div>
         </div>
         <!-- 광고 바 -->
