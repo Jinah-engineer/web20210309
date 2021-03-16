@@ -30,7 +30,11 @@
     <!-- .wrapper>.absolute-elem{absolute} -->
     <div class="wrapper">
         <div class="absolute-elem">absolute</div>
-        <!-- 역시나 p element는 div에 의해서 영향 받지 않는다. -->
+        <!-- 
+            p element는 div에 의해서 영향 받지 않는다. 
+            absolute는 배치 흐름에서 빠지고, 
+            relative는 배치 흐름에 영향을 받는다. 
+        -->
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="all.min.js"></script>
+    <style>
+        /* 내비게이션 바 */
+        .wrapper {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: gray;
+        }
+
+        .main1 {
+            color: white;
+            font-size: 30px;
+            padding: 15px;
+        }
+
+        .main1:hover {
+            background-color: green;
+        }
+
+        /* 왼쪽 사이드 바 */
+        .body-container {
+            display: flex;
+            border: 2px solid rgb(189, 186, 186);
+        }
+
+
+        .side-menu {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            background-color: ivory;
+            padding: 10px;
+        }
+
+        .main:hover {
+            background-color: gray;
+        }
+
+        /* 본문 */
+        .htmlclass {
+            display: flex;
+            flex-grow: 5;
+            flex-direction: column;
+            padding: none;
+            background-color: white;
+            border: 2px solid rgb(189, 186, 186);
+            justify-content: center;
+            align-items: center;
+            font: 50px bold;
+        }
+        .content1 {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 2px solid rgb(189, 186, 186);
+            justify-content: center;
+            align-items: center;
+            font: 30px bold;
+        }
+        .content3 {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 2px solid rgb(189, 186, 186);
+            justify-content: center;
+            align-items: center;
+            font: 30px bold;
+        }
+
+        /* 오른쪽 사이드 바 */
+        .content2 {
+            display: flex;
+            flex-grow: 1;
+            background-color: white;
+            border: 2px solid rgb(189, 186, 186);
+            justify-content: center;
+            align-items: center;
+            font: 50px bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 제목 -->
+    <!-- .title-container>h1>lorem3^button{login} -->
+    <div class="title-container">
+        <h1>W3Schools</h1>
+        <div>
+            <button>login</button>
+        </div>
+    </div>
+
+    <!-- 내비게이션 바 -->
+    <!-- .navbar>.wrapper>.main*6>lorem1^^.wrapper>.main*3>lorem1 -->
+    <div class="navbar">
+        <div class="wrapper">
+            <div class="main1"><i class="fas fa-bars"></i>.</div>
+            <div class="main1"><i class="fas fa-home"></i></div>
+            <div class="main1">HTML</div>
+            <div class="main1">CSS</div>
+            <div class="main1">JAVASCRIPT</div>
+            <div class="main1">MORE</div>
+        </div>
+        <div class="wrapper">
+            <div class="main1"><i class="fas fa-adjust"></i></div>
+            <div class="main1"><i class="fas fa-globe-americas"></i></div>
+            <div class="main1"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+
+    <!-- 본문 -->
+    <div class="body-container">
+        <div class="side-menu">
+            <div class="main">
+                <p>HTML and CSS</p>
+            </div>
+            <div class="main">Learn HTML</div>
+            <div class="main">Learn CSS</div>
+            <div class="main">Learn Bootstrap</div>
+            <div class="main">Learn W3.CSS</div>
+            <div class="main">Learn Colors</div>
+            <div class="main">Learn Icons</div>
+            <div class="main">Learn Graphics</div>
+            <div class="main">Learn How To</div>
+            <div class="main">Learn Sass</div>
+            <br>
+            <div class="main">
+                <p>Javascript</p>
+            </div>
+            <div class="main">Learn Javascript</div>
+            <div class="main">Learn jQuery</div>
+            <div class="main">Learn React</div>
+            <div class="main">Learn AngularJS</div>
+            <div class="main">Learn JSON</div>
+            <div class="main">Learn AJAX</div>
+            <div class="main">Learn HTML-DOM</div>
+            <div class="main">Learn AppML</div>
+            <div class="main">Learn W3.JS</div>
+            <br>
+            <div class="main">
+                <p>Server side</p>
+            </div>
+            <div class="main">Learn SQL</div>
+            <div class="main">Learn PHP</div>
+            <div class="main">Learn ASP</div>
+            <div class="main">Learn Node.js</div>
+            <div class="main">Learn Raspberry Pi</div>
+        </div>
+        <!-- 본문 -->
+        <div class="htmlclass">
+            <div class="content1">HTML</div>
+            <div class="content3">blahblah</div>
+        </div>
+        <!-- 광고 바 -->
+        <div class="content2">AD</div>
+    </div>
+
+</body>
+
+</html>

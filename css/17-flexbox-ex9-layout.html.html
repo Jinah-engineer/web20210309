@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="all.min.js"></script>
+    <style>
+        .wrapper {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: gray;
+        }
+
+        .main {
+            color: white;
+            font-size: 30px;
+            padding: 15px;
+        }
+
+        .main:hover {
+            background-color: green;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .body-container {
+            display: flex;
+            margin-top: 10px;
+        }
+        .side-menu {
+            padding: 20px 30px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px 30px;
+        }
+        .body-container div:nth-child(1) {
+            background-color: grey;
+        }
+        .body-container div:nth-child(2) {
+            background-color: black;
+            color: white;
+        }
+        .body-container div:nth-child(3) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .title-container>h1>lorem3^button{login} -->
+    <div class="title-container">
+        <h1>W3Schools</h1>
+        <div>
+            <button>login</button>
+        </div>
+    </div>
+
+       <!-- 내비게이션 바 -->
+    <!-- .navbar>.wrapper>.main*6>lorem1^^.wrapper>.main*3>lorem1 -->
+    <div class="navbar">
+        <div class="wrapper">
+            <div class="main"><i class="fas fa-bars"></i>.</div>
+            <div class="main"><i class="fas fa-home"></i></div>
+            <div class="main">HTML</div>
+            <div class="main">CSS</div>
+            <div class="main">JAVASCRIPT</div>
+            <div class="main">MORE</div>
+        </div>
+        <div class="wrapper">
+            <div class="main"><i class="fas fa-adjust"></i></div>
+            <div class="main"><i class="fas fa-globe-americas"></i></div>
+            <div class="main"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+
+    <!-- .body-container>.side-menu+.main-content+.ad-container -->
+    <div class="body-container">
+        <div class="side-menu">
+            <!-- h3>lorem1^h2*10>lorem1 -->
+            <h3>Lorem.</h3>
+            <h2>Lorem.</h2>
+            <h2>Aliquam.</h2>
+            <h2>Repellat.</h2>
+            <h2>Perspiciatis.</h2>
+            <h2>Fuga?</h2>
+            <h2>Odit.</h2>
+            <h2>Culpa?</h2>
+            <h2>Aliquid?</h2>
+            <h2>Nihil.</h2>
+            <h2>Iusto.</h2>
+        </div>
+        <div class="main-content">
+            <!-- h1>lorem5^p*10>lorem1 -->
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem.</p>
+            <p>Ab!</p>
+            <p>Repellendus.</p>
+            <p>Quibusdam!</p>
+            <p>Nemo?</p>
+            <p>Ab.</p>
+            <p>Alias.</p>
+            <p>Itaque.</p>
+            <p>Nulla.</p>
+            <p>Aspernatur?</p>
+        </div>
+        <div class="ad-container">
+            <img src="../html/maltese-price-9.jpg" alt="">
+        </div>
+    </div>
+   
+
+</body>
+
+</html>
