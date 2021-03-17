@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- DOM이 완성되기 전에 실행된 코드는 원하는 값을 호출할 수 없다.
+        따라서 웬만하면 body 종료 태그 이전에 script 태그를 작성하도록 해야 한다.
+        code가 읽히는 순서 유념하기!  -->
+        <script>
+            document.getElementById("head1").innerHTML = "Hello";
+        </script>
+    
+    <!-- h1#head1>lorem1 -->
+    <h1 id="head1">Lorem.</h1>
+
+</body>
+
+</html>
