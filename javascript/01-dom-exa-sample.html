@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    아이디 <input onkeyup="check()" type="text" id="input1">
+    <input type="submit" id="submit1">
+    <p id="alert1"></p>
+    <br>
+
+    <script>
+        // d = parameter of function
+        function check(d) {
+
+            console.log(d);
+
+            var c = document.getElementById("input1");
+
+            if (c.value.length < 5) {
+
+                var a = document.getElementById("alert1");
+                a.innerHTML = "아이디가 너무 짧습니다.";
+                a.style.color = "red";
+
+            } else {
+
+                var b = document.getElementById("alert1");
+                b.innerHTML = "올바른 아이디 입니다.";
+                b.style.color = "green";
+            }
+        }
+
+        check(2);
+        check(3);
+        check(document.getElementById("input1").id);
+    </script>
+
+</body>
+
+</html>
