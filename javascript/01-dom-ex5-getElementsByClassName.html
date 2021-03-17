@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+ <!-- h1.header*3>lorem1 -->
+ <h1 class="header">Lorem.</h1>
+ <h1 class="header para">Blanditiis!</h1>
+ <h1 class="header para">Quos.</h1>
+
+ <script>
+    //  getElement's'~의 경우 여러 값을 소환하기 때문에 반드시 index값을 넣어야 적절한 값을 추출 가능하다. 
+     var elems1 = document.getElementsByClassName("header");
+
+     console.log(elems1[1].innerHTML);
+
+     var elems2 = document.getElementsByClassName("para");
+     console.log(elems2[0].innerHTML);
+
+ </script>
+</body>
+</html>

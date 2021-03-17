@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- h1.para*2>lorem1^p.para*2>lorem6 -->
+    <h1 class="para">Lorem.</h1>
+    <h1 class="para">Deleniti?</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="para">Laudantium itaque eum nihil tempora dicta.</p>
+
+    <script>
+        var p = document.querySelectorAll("p.para");
+        console.log(p[0].innerHTML);
+
+        var q = document.querySelectorAll(".para");
+        console.log(q[2].innerHTML);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+    <!-- h1.header*3>lorem1 -->
+    <h1 class="header">Lorem.</h1>
+    <h1 class="header para">Itaque.</h1>
+    <h1 class="header para">Architecto!</h1>
+
+    <script>
+        // 단일 개수의 값을 추출한다. 
+        var x = document.querySelector(".header");
+        console.log(x.innerHTML);
+
+        var y = document.querySelector(".para");
+        console.log(y.innerHTML); 
+        // 위의 코드 = window.console.log(y.innerHTML)과 같다
+        // 윈도우에서 제공되는 method! 
+
+        var z = document.querySelector("h1:nth-child(3)");
+        console.log(z.innerHTML);
+    </script>
+</body>
+
+<script>
+    var x = // 단일 개수의 값을 추출한다. 
+    document.querySelector(".header");  console.log(x.innerHTML);
+
+    var y = document.querySelector(".para")
+    console.log(y.innerHTML);
+
+    var z = document.querySelector("h1:nth-child(3)");
+    console.log(z.innerHTML);
+</script>
+</html>
