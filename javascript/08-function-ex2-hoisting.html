@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        // hoisting ok
+        myFunc();
+        function myFunc(params) {
+            console.log("abc");
+        }
+
+        func2();
+        
+        // 변수에 함수를 할당
+        // hoisting not ok = 변수에 함수를 할당하면 위의 func2()가 값을 끌어올릴 수 없다. 밑에 있는 경우에만 값 출력 가능.
+        var func2 = function (params) {
+            console.log("no name");
+        }
+        
+    </script>
+</body>
+
+</html>

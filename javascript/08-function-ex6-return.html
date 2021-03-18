@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        function myFunc(params) {
+            console.log("abc");
+            console.log("def");
+
+            // return의 기능
+            // 1. 함수가 종료된다.
+            return;
+
+            console.log("hij"); // 위에 return이 출력되기 때문에 이 값은 실행되지 않는다.
+        }
+
+        function myFunc2 () {
+
+            console.log("123");
+            console.log("456");
+
+            // 1. 함수 종료
+            // 2. 키워드 오른쪽 값을 호출한 곳으로 반환시킨다 (return)
+            return 777;
+        }
+    </script>
+</body>
+
+</html>
