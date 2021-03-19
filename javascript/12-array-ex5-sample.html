@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text" id="result" readonly>
+    <script>
+        lotto();
+        function lotto() {
+            var balls = [];
+
+            while (balls.length < 6) {
+                var newNumber = getNum();
+                if (!balls.includes(newNumber)) {
+                    balls.push(newNumber);
+                }
+            }
+
+            // 짝수가 나올 때 텍스트 상자에 표시하려면? 
+            for (var i = 0; i < 6; i++) {
+                console.log(balls[i]);
+                if (balls[i] % 2 == 0) {
+                    document.getElementById("result").value += " " + balls[i];
+                }
+            }
+        }
+        // document.getElementById("result").innerHTML = 
+
+        function getNum() {
+            return Math.floor(Math.random() * 45) + 1;
+        }
+    </script>
+</body>
+
+</html>
