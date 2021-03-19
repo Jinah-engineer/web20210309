@@ -25,7 +25,8 @@
             for (var i = 0; i < 6; i++) {
                 console.log(balls[i]);
                 if (balls[i] % 2 == 0) {
-                    document.getElementById("result").value += " " + balls[i];
+                    // document.getElementById("result").value += " " + balls[i];
+                    document.getElementById("result").value = document.getElementById("result").value + " " + balls[i];
                 }
             }
         }
