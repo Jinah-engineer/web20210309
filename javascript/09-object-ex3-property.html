@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        var car = {
+            weight: 800,
+            color: "white"
+        }
+        console.log(car.weight);
+        console.log(car["weight"]);
+
+        console.log(car.color); // 위와 아래 두개 모두 같은 결과를 도출한다. 
+        console.log(car["color"]);
+
+        car["color"] = "red";
+        console.log(car.color);
+        console.log(car["color"]);
+    </script>
+</body>
+
+</html>

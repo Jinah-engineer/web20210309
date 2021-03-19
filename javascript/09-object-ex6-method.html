@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        // method는 object의 function
+        function funcName(param1, param2) {
+            console.log("statements....");
+        }
+
+        var car = {
+            name: "fiat",
+            model: 500,
+            // 아래의 경우 앞에서 이름이(start) 결정되었기 때문에 함수 name을 정의하지 않아도 된다. 
+            start: function (param1, param2) {
+                console.log("statements...");
+            }
+        }
+
+        console.log(car.name);
+        funcName();
+
+        car.start(); //car가 객체로 작용하기 때문에 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        function start() {
+            console.log(this.name + "가 출발합니다."); // this >> method가 실행되고 있는 객체를 의미한다. 따라서 객체를 명시할 필요 없이 this를 쓰면 다양하게 활용가능하다. 
+        }
+        var car = {
+            name: "fiat",
+            start: start
+        }
+        var kar = {
+            name: "volvo",
+            start: start
+        }
+
+        car.start();
+        kar.start();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- h1#head1>lorem1 -->
+    <h1 id="head1">Lorem.</h1>
+
+    <script>
+        // 1번 형식: document.getElementById("head1").innerHTML = "Hello";
+        // 2번 형식 
+        var elem = document.getElementById("head1")
+        elem.innerHTML = "Hello";
+        // 1번과 2번의 결과값은 같다. 
+        // 객체 참조가 복사되는 것이다 -! 
+
+        var elem2 = document.getElementById("head1")
+        elem2.innerHTML = "world";
+
+    </script>
+</body>
+
+</html>
