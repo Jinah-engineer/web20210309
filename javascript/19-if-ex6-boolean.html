@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        console.log("boolean");
+
+        var a = true;
+        if (a) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        // boolean 이 아닌 number 타입을 넣게 되면? 
+        // 0이 아니면 true
+        console.log("number");
+
+        var b = 3;
+        if (b) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        // 0일 때는 false
+        console.log("number");
+
+        var b = 0;
+        if (b) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        // string ---> 빈 string이 아니면 true
+        var c = ""; // 빈 string. space 는 빈string이 아니다. 
+
+        if (c) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        c = 'a';
+        if (c) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        var d; // undefined 일때는 --> false
+        console.log("underfined");
+        if (d) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+    </script>
+</body>
+
+</html>
