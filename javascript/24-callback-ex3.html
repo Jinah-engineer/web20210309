@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    // 2번 파일과 같은 결과
+    function myfunc1(b) {
+        b(); 
+    }
+
+    myfunc1(function () {
+        console.log("f1 function");
+    });
+</script>
+</body>
+</html>
