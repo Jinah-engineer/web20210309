@@ -42,9 +42,9 @@
         var text3 = "";
         for (var c = 0; c < 5; c++) {
             for (var k = 0; k < c; k++) {
-                text3+= "&nbsp;";
+                text3 += "&nbsp;";
             }
-            for (var d = 5; d >= c; d--) {
+            for (var d = 5; d > c; d--) {
                 text3 += "*" 
             }
             text3 += "<br>"
@@ -53,8 +53,9 @@
 
         var text4 = "";
         for (var e = 0; e < 5; e++) {
-            for (var l = 5; l >= e; l--)
+            for (var l = 5; l >= e; l--) {
                 text4 += "&nbsp;";
+            }
             for (var f = 0; f <= e; f++) {
                 text4 += "*" 
             }
@@ -62,14 +63,14 @@
         }
         document.getElementById("result4").innerHTML = text4;
 
-        switch (key) {
-            case value:
+        // switch (key) {
+        //     case value:
                 
-                break;
+        //         break;
         
-            default:
-                break;
-        }
+        //     default:
+        //         break;
+        // }
     </script>
 </body>
 
