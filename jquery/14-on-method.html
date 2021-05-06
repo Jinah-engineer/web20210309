@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#input1").on("keyup", function () { // keyup event 발생 시 -> function 실행
+                var t = $(this).val(); // input1에 작성되는 value
+                $("#head1").text(t); // head1에 이 value가 texting 된다.
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <!-- input#input1+h1#head1 -->
+    <input type="text" id="input1">
+    <h1 id="head1"></h1>
+</body>
+
+</html>

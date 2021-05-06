@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+    </style>
+
+    <script>
+        // DOM Tree 가장 위에 있는 것 - document 객체
+        // ready - DOM이 실행된 후 안전하게 실행되는 함수
+        // 따라서 이 코드가 반드시 body 태그 안에 있을 필요가 없다.
+
+        $(document).ready(function () { // parameter가 있다면, 함수
+            console.log("문서 로딩 완료됨");
+
+            document.getElementById("head1").style.color = "blue";
+        }); 
+         
+    </script>
+</head>
+
+<body>
+    <h1 id = "head1">Lorem, ipsum dolor.</h1>
+</body>
+
+</html>
