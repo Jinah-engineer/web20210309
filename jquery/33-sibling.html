@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#head5").siblings().css("color", "blue"); // 같은 부모를 두고 있는 element들 
+            $("#head5").next().css("background-color", "yellow"); // 형제 중에 다음에 오는 element
+            $("#head5").prev().css("background-color", "pink"); // 직전 형제 
+            $("#head5").nextAll().css("border", "3px solid green"); // 다음 모든 형제들
+            $("#head5").prevAll().css("border", "3px dotted black"); // 직전 모든 형제들
+        });
+    </script>
+</head>
+
+<body>
+    <!-- h1#head$*10>lorem2 -->
+    <h1 id="head1">Lorem, ipsum.</h1>
+    <h1 id="head2">A, quod!</h1>
+    <h1 id="head3">Labore, sint.</h1>
+    <h1 id="head4">Quo, quis.</h1>
+    <h1 id="head5">Hic, alias?</h1>
+    <h1 id="head6">Ipsum, vel.</h1>
+    <h1 id="head7">Recusandae, consequatur.</h1>
+    <h1 id="head8">Doloremque, repudiandae?</h1>
+    <h1 id="head9">Explicabo, sequi.</h1>
+    <h1 id="head10">Qui, cum.</h1>
+</body>
+
+</html>
